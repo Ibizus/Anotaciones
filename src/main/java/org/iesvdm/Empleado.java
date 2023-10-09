@@ -1,5 +1,7 @@
 package org.iesvdm;
 
+import java.util.Objects;
+
 public class Empleado {
 
     // ATRIBUTES:
@@ -12,6 +14,18 @@ public class Empleado {
     // CONSTRUCTOR:
     public Empleado(){
 
+    }
+
+    public Empleado(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public Empleado(String nombre, String apellidos, String direccion, String dni, Integer telefono) {
+        this.nombre = nombre;
+        this.apellidos = apellidos;
+        this.direccion = direccion;
+        this.dni = dni;
+        this.telefono = telefono;
     }
 
     // METHODS:
@@ -66,5 +80,18 @@ public class Empleado {
                 ", dni='" + dni + '\'' +
                 ", telefono=" + telefono +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Empleado empleado = (Empleado) o;
+        return Objects.equals(nombre, empleado.nombre) && Objects.equals(dni, empleado.dni);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(dni);
     }
 }
