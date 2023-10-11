@@ -11,6 +11,15 @@ public class Directivo extends Empleado{
         this.codigoDespacho = codigoDespacho;
     }
 
+    // METHODS:
+    @Override
+    public String toString() {
+        return "Directivo {" +
+                super.toString() +
+                "codigoDespacho=" + codigoDespacho +
+                '}';
+    }
+
     // GETTERS:
     public Integer getCodigoDespacho() {
         return codigoDespacho;

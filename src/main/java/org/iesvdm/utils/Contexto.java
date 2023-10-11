@@ -17,7 +17,7 @@ public class Contexto {
         // ITERO PARA CARGAR LAS ANOTACIONES E INSTANCIAR LOS EMPLEADOS SEGUN SU CLASE Y AÑADIRLOS A LA EMPRESA
         for (EmpleadoAnot anotHijo: empleadoAnotHijos) {
 
-            // Atributos del padre:
+            // Atributos comunes del padre:
             String nombre = anotHijo.nombre();
             String apellidos = anotHijo.apellidos();
             String direccion = anotHijo.direccion();

@@ -12,7 +12,17 @@ public class Tecnico extends Operario{
         this.perfil = perfil;
     }
 
-    // GETTERS & SETTERS:
+    // METHODS:
+    @Override
+    public String toString() {
+        return "Tecnico {" +
+                super.toString() +
+                "perfil='" + perfil + '\'' +
+                ", codigoTaller=" + codigoTaller +
+                '}';
+    }
+
+    // GETTER:
     public String getPerfil() {
         return perfil;
     }

@@ -6,11 +6,9 @@ public class Main {
     public static void main(String[] args) {
 
         Empresa empresitaNueva = new Empresa();
-
         Contexto.cargadorDeContexto(empresitaNueva);
 
-        // ITERO PARA COMPROBAR QUE SE HA CARGADO EL CONTEXO CORRECTAMENTE:
-
+        // ITERO SOBRE EL SET DE EMPLEADOS PARA COMPROBAR QUE SE HA CARGADO EL CONTEXTO CORRECTAMENTE:
         for (Empleado trabajador: empresitaNueva.getEmpleadoSet()){
 
             System.out.println(trabajador);

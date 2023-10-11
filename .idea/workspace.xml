@@ -4,11 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="830d675e-e26f-4d26-af45-dd84d0686580" name="Changes" comment="Empleados y Test hecho">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="830d675e-e26f-4d26-af45-dd84d0686580" name="Changes" comment="Test empezados">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/iesvdm/Directivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/iesvdm/Directivo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/iesvdm/Empleado.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/iesvdm/Empleado.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/iesvdm/Empresa.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/iesvdm/Empresa.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/iesvdm/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/iesvdm/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/iesvdm/Oficial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/iesvdm/Oficial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/iesvdm/Operario.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/iesvdm/Operario.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/iesvdm/Tecnico.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/iesvdm/Tecnico.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/iesvdm/anotations/EmpleadoAnot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/iesvdm/anotations/EmpleadoAnot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/iesvdm/utils/Contexto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/iesvdm/utils/Contexto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/EmpresaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/EmpresaTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +102,8 @@
       <workItem from="1696848974384" duration="1912000" />
       <workItem from="1696851046768" duration="4044000" />
       <workItem from="1697005377175" duration="7101000" />
-      <workItem from="1697016073716" duration="2397000" />
+      <workItem from="1697016073716" duration="2443000" />
+      <workItem from="1697054635640" duration="3278000" />
     </task>
     <task id="LOCAL-00001" summary="proyecto creado">
       <option name="closed" value="true" />
@@ -122,7 +129,15 @@
       <option name="project" value="LOCAL" />
       <updated>1696855080116</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Test empezados">
+      <option name="closed" value="true" />
+      <created>1697018511585</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1697018511585</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -131,6 +146,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="proyecto creado" />
     <MESSAGE value="Empleados y Test hecho" />
-    <option name="LAST_COMMIT_MESSAGE" value="Empleados y Test hecho" />
+    <MESSAGE value="Test empezados" />
+    <option name="LAST_COMMIT_MESSAGE" value="Test empezados" />
   </component>
 </project>

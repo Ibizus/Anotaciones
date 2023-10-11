@@ -11,6 +11,7 @@ public abstract class Operario extends Empleado{
         this.codigoTaller = codigoTaller;
     }
 
+
     // GETTER:
     public Integer getCodigoTaller() {
         return codigoTaller;

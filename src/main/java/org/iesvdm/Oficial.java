@@ -12,6 +12,16 @@ public class Oficial extends Operario{
         this.categoria = categoria;
     }
 
+    // METHODS:
+    @Override
+    public String toString() {
+        return "Oficial {" +
+                super.toString() +
+                "categoria='" + categoria + '\'' +
+                ", codigoTaller=" + codigoTaller +
+                '}';
+    }
+
     // GETTERS & SETTERS:
     public String getCategoria() {
         return categoria;

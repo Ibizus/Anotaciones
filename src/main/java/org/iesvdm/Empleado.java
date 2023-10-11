@@ -2,9 +2,10 @@ package org.iesvdm;
 
 import java.util.Objects;
 
+// En la clase "empleado" van solo los atributos que realmente queremos que tenga la clase instanciada (sus hijas)
 public abstract class Empleado {
 
-    // ATRIBUTES:
+    // ATTRIBUTES:
     protected String nombre;
     protected String apellidos;
     protected String direccion;
@@ -23,15 +24,15 @@ public abstract class Empleado {
     // METHODS:
     @Override
     public String toString() {
-        return "Estudiante{" +
-                "nombre='" + nombre + '\'' +
+        return "Nombre='" + nombre + '\'' +
                 ", apellidos='" + apellidos + '\'' +
                 ", direccion='" + direccion + '\'' +
                 ", dni='" + dni + '\'' +
-                ", telefono=" + telefono +
-                '}';
+                ", telefono=" + telefono + " ";
     }
 
+    // Al utilizar un set es necesario hacer el override de equals y hashCode
+    // (en este caso hago la comprobación por dni y nombre)
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -44,6 +45,7 @@ public abstract class Empleado {
     public int hashCode() {
         return Objects.hash(dni);
     }
+
 
     // GETTERS & SETTERS:
     public String getNombre() {
