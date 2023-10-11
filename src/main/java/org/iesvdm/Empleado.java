@@ -2,25 +2,17 @@ package org.iesvdm;
 
 import java.util.Objects;
 
-public class Empleado {
+public abstract class Empleado {
 
     // ATRIBUTES:
-    private String nombre;
-    private String apellidos;
-    private String direccion;
-    private String dni;
-    private Integer telefono;
+    protected String nombre;
+    protected String apellidos;
+    protected String direccion;
+    protected String dni;
+    protected String telefono;
 
     // CONSTRUCTOR:
-    public Empleado(){
-
-    }
-
-    public Empleado(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public Empleado(String nombre, String apellidos, String direccion, String dni, Integer telefono) {
+    public Empleado(String nombre, String apellidos, String direccion, String dni, String telefono) {
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.direccion = direccion;
@@ -29,6 +21,29 @@ public class Empleado {
     }
 
     // METHODS:
+    @Override
+    public String toString() {
+        return "Estudiante{" +
+                "nombre='" + nombre + '\'' +
+                ", apellidos='" + apellidos + '\'' +
+                ", direccion='" + direccion + '\'' +
+                ", dni='" + dni + '\'' +
+                ", telefono=" + telefono +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Empleado empleado = (Empleado) o;
+        return Objects.equals(nombre, empleado.nombre) && Objects.equals(dni, empleado.dni);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(dni);
+    }
 
     // GETTERS & SETTERS:
     public String getNombre() {
@@ -63,35 +78,12 @@ public class Empleado {
         this.dni = dni;
     }
 
-    public Integer getTelefono() {
+    public String getTelefono() {
         return telefono;
     }
 
-    public void setTelefono(Integer telefono) {
+    public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
 
-    @Override
-    public String toString() {
-        return "Estudiante{" +
-                "nombre='" + nombre + '\'' +
-                ", apellidos='" + apellidos + '\'' +
-                ", direccion='" + direccion + '\'' +
-                ", dni='" + dni + '\'' +
-                ", telefono=" + telefono +
-                '}';
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Empleado empleado = (Empleado) o;
-        return Objects.equals(nombre, empleado.nombre) && Objects.equals(dni, empleado.dni);
-    }
-
-    @Override
-    public int hashCode() {
-        return Objects.hash(dni);
-    }
 }

@@ -5,8 +5,8 @@ import java.lang.annotation.*;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.TYPE)
-@Repeatable(org.iesvdm.anotations.Empleados.class)
-public @interface Empleado {
+@Repeatable(EmpleadosAnot.class)
+public @interface EmpleadoAnot {
 
     String nombre();
     String apellidos();
@@ -14,6 +14,9 @@ public @interface Empleado {
     String direccion();
     String telefono();
     String clase();
-    String codigoDespacho();
+    int codigoTaller() default 0;
+    String perfil() default "void";
+    String categoria() default "void";
+    int codigoDespacho() default 0;
 
 }
