@@ -10,5 +10,10 @@ public class Main {
         Contexto.cargadorDeContexto(empresitaNueva);
 
         // ITERO PARA COMPROBAR QUE SE HA CARGADO EL CONTEXO CORRECTAMENTE:
+
+        for (Empleado trabajador: empresitaNueva.getEmpleadoSet()){
+
+            System.out.println(trabajador);
+        }
     }
 }
